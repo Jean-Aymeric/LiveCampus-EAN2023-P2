@@ -2,7 +2,7 @@ package com.jad.duck;
 
 public class PlasticDuck extends Duck {
     public PlasticDuck(String name) {
-        super(name);
+        super(name, new NoFly());
     }
 
     @Override
@@ -10,8 +10,4 @@ public class PlasticDuck extends Duck {
         System.out.println(this.getName()  + " : Coin Coin");
     }
 
-    @Override
-    public void fly() {
-        System.out.println(this.getName()  + " : Je vole pas");
-    }
 }

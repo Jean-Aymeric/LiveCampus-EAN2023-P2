@@ -14,4 +14,10 @@ public class HenHouse {
             duck.sing();
         }
     }
+
+    public void flyAll() {
+        for(final Duck duck : this.ducks) {
+            duck.fly();
+        }
+    }
 }

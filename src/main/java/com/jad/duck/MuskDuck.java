@@ -2,7 +2,7 @@ package com.jad.duck;
 
 public class MuskDuck extends Duck {
     public MuskDuck(String name) {
-        super(name);
+        super(name, new Fly());
     }
 
     @Override
@@ -10,8 +10,4 @@ public class MuskDuck extends Duck {
         System.out.println(this.getName()  + " : Coin Coin");
     }
 
-    @Override
-    public void fly() {
-        System.out.println(this.getName()  + " : Je vole");
-    }
 }

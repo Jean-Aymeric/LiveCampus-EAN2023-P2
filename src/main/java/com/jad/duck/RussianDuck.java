@@ -2,7 +2,7 @@ package com.jad.duck;
 
 public class RussianDuck extends Duck {
     public RussianDuck(String name) {
-        super(name);
+        super(name, new Fly());
     }
 
     @Override
@@ -10,8 +10,5 @@ public class RussianDuck extends Duck {
         System.out.println(this.getName()  + " : Koin Koin");
     }
 
-    @Override
-    public void fly() {
-        System.out.println(this.getName()  + " : Je vole");
-    }
+
 }
