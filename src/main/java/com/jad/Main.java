@@ -1,17 +1,16 @@
 package com.jad;
 
-import com.jad.relation.Human;
-import com.jad.relation.Shirt;
-import com.jad.test.*;
+import com.jad.duck.*;
 
-import java.util.ArrayList;
 
 public class Main {
     public static void main(final String[] args) {
-        Human jad = new Human();
-        Human gaspard = new Human();
-        jad.wear(new Shirt());
-        gaspard.transplant(jad.popOrgan());
-        System.out.println("coucou");
+        final HenHouse henHouse = new HenHouse();
+        henHouse.addDuck(new Mallard("Donald"));
+        henHouse.addDuck(new Mallard("Daisy"));
+        henHouse.addDuck(new GermanDuck("Elmut"));
+        henHouse.addDuck(new MuskDuck("Conan"));
+
+        henHouse.singAll();
     }
 }
